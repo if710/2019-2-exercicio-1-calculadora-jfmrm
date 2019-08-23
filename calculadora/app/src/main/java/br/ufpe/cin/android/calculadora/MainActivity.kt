@@ -1,15 +1,97 @@
 package br.ufpe.cin.android.calculadora
 
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    }
 
+        btn_0.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_0.text.toString()
+        }
+
+        btn_1.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_1.text.toString()
+        }
+
+        btn_2.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_2.text.toString()
+        }
+
+        btn_3.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_3.text.toString()
+        }
+
+        btn_4.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_4.text.toString()
+        }
+
+        btn_5.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_5.text.toString()
+        }
+
+        btn_6.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_6.text.toString()
+        }
+
+        btn_7.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_7.text.toString()
+        }
+
+        btn_8.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_8.text.toString()
+        }
+
+        btn_9.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_9.text.toString()
+        }
+
+        btn_Add.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_Add.text.toString()
+        }
+
+        btn_Multiply.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_Multiply.text.toString()
+        }
+
+        btn_Subtract.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_Subtract.text.toString()
+        }
+
+        btn_Divide.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_Divide.text.toString()
+        }
+
+        btn_Dot.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_Divide.text.toString()
+        }
+
+        btn_LParen.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_LParen.text.toString()
+        }
+
+        btn_RParen.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_RParen.text.toString()
+        }
+
+        btn_Power.setOnClickListener{
+            text_info.text = text_info.text.toString() + btn_Power.text.toString()
+        }
+
+        btn_Clear.setOnClickListener{
+            text_info.text = ""
+        }
+
+        btn_Equal.setOnClickListener{
+            text_info.text = eval(text_info.text.toString()).toString()
+        }
+    }
 
     //Como usar a função:
     // eval("2+2") == 4.0
