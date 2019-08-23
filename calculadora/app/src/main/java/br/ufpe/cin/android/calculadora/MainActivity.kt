@@ -13,83 +13,82 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_0.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_0.text.toString()
+            text_calc.text = text_calc.text.append(btn_0.text)
         }
 
         btn_1.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_1.text.toString()
+            text_calc.text = text_calc.text.append(btn_1.text)
         }
 
-        btn_2.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_2.text.toString()
+        btn_2.setOnClickListener {
+            text_calc.text = text_calc.text.append(btn_2.text)
         }
-
         btn_3.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_3.text.toString()
+            text_calc.text = text_calc.text.append(btn_3.text)
         }
 
         btn_4.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_4.text.toString()
+            text_calc.text = text_calc.text.append(btn_4.text)
         }
 
         btn_5.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_5.text.toString()
+            text_calc.text = text_calc.text.append(btn_5.text)
         }
 
         btn_6.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_6.text.toString()
+            text_calc.text = text_calc.text.append(btn_6.text)
         }
 
         btn_7.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_7.text.toString()
+            text_calc.text = text_calc.text.append(btn_7.text)
         }
 
         btn_8.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_8.text.toString()
+            text_calc.text = text_calc.text.append(btn_8.text)
         }
 
         btn_9.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_9.text.toString()
+            text_calc.text = text_calc.text.append(btn_9.text)
         }
 
         btn_Add.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_Add.text.toString()
+            text_calc.text = text_calc.text.append(btn_Add.text)
         }
 
         btn_Multiply.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_Multiply.text.toString()
+            text_calc.text = text_calc.text.append(btn_Multiply.text)
         }
 
         btn_Subtract.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_Subtract.text.toString()
+            text_calc.text = text_calc.text.append(btn_Subtract.text)
         }
 
         btn_Divide.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_Divide.text.toString()
+            text_calc.text = text_calc.text.append(btn_Divide.text)
         }
 
         btn_Dot.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_Divide.text.toString()
+            text_calc.text = text_calc.text.append(btn_Dot.text)
         }
 
         btn_LParen.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_LParen.text.toString()
+            text_calc.text = text_calc.text.append(btn_LParen.text)
         }
 
         btn_RParen.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_RParen.text.toString()
+            text_calc.text = text_calc.text.append(btn_RParen.text)
         }
 
         btn_Power.setOnClickListener{
-            text_info.text = text_info.text.toString() + btn_Power.text.toString()
+            text_calc.text = text_calc.text.append(btn_Power.text)
         }
 
         btn_Clear.setOnClickListener{
-            text_info.text = ""
+            text_calc.text = text_calc.text.delete(0, text_calc.text.length)
         }
 
         btn_Equal.setOnClickListener{
-            text_info.text = eval(text_info.text.toString()).toString()
+            text_info.text = eval(text_calc.text.toString()).toString()
         }
     }
 
